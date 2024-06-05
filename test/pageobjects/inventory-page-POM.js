@@ -5,6 +5,7 @@ class inventoryPage {
     get pageTitle() { return $ ('span[data-test="title"]')}
 
     //page actions
+
 }
 
 export default new inventoryPage ()

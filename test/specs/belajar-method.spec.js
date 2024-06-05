@@ -1,14 +1,13 @@
 import { browser, $, expect } from '@wdio/globals'
 
 describe('Belajar Method', function (){
-    it('Method click', async function (){
+    it.only('Method click', async function (){
         await browser.url('https://webdriver.io/docs/api/element/click')
 
         const themeToggleButton = await $ ('.toggleButton_gllP')
         await themeToggleButton.click()
 
         await browser.pause(4000)
-
     })
 
     it('Method getText', async function (){
@@ -20,7 +19,7 @@ describe('Belajar Method', function (){
         console.log('<||||> ini text nya <||||>', paragrafText)
     })
 
-    it.only('Method setValue & getValue', async function (){
+    it('Method setValue & getValue', async function (){
         await browser.url('https://duckduckgo.com/')
 
         const searchInput = await $ ('#searchbox_input')
